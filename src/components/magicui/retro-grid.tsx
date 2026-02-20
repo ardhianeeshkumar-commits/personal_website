@@ -59,6 +59,7 @@ export const RetroGrid = ({ className = "" }: RetroGridProps) => {
           ))}
         </div>
       </div>
+      
 
       {/* Glowing particles */}
       {Array.from({ length: 15 }).map((_, i) => (

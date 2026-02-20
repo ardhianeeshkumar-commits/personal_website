@@ -23,7 +23,11 @@ interface Project {
   contributors?: Contributor[];
 }
 
-const ProjectsSection = () => {
+interface ProjectsSectionProps {
+  isDarkMode?: boolean;
+}
+
+const ProjectsSection = ({ isDarkMode = true }: ProjectsSectionProps) => {
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
 
   // Portfolio projects data

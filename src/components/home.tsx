@@ -133,7 +133,7 @@ const Home = () => {
               viewport={{ once: true, margin: "-100px" }}
             >
               <h2
-                className={`text-3xl md:text-4xl font-bold mb-8 text-center ${isDarkMode ? "text-white" : "text-gray-900"}`}
+                className={`text-3xl md:text-4xl font-bold mb-8 text-center ${isDarkMode ? "text-white" : "text-gray-900"}`} 
               >
                 Meet{" "}
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-500">
@@ -263,10 +263,7 @@ const Home = () => {
               <h2
                 className={`text-3xl md:text-4xl font-bold mb-8 text-center ${isDarkMode ? "text-white" : "text-gray-900"}`}
               >
-                In my{" "}
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-500">
-                  Barracks
-                </span>
+                My Skills
               </h2>
               <SkillsSection isDarkMode={isDarkMode} />
             </motion.div>

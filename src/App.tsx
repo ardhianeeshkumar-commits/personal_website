@@ -1,7 +1,7 @@
 import { Suspense, useState, useEffect } from "react";
 import { useRoutes, Routes, Route } from "react-router-dom";
 import Home from "./components/home";
-import MatrixBackground from "./components/MatrixBackground";
+import { BackgroundBeams } from "./components/ui/background-beams";
 import { SmoothCursor } from "./components/magicui/smooth-cursor";
 import LoadingScreen from "./components/LoadingScreen";
 import routes from "tempo-routes";
@@ -19,12 +19,12 @@ function App() {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-black cursor-none">
+    <div className="relative min-h-screen bg-neutral-950 cursor-none">
       {/* Loading Screen */}
       <LoadingScreen isLoading={isLoading} />
 
-      {/* Global Matrix Background */}
-      <MatrixBackground />
+      {/* Global Background Beams */}
+      <BackgroundBeams />
 
       {/* Global Smooth Cursor */}
       <SmoothCursor color="#00ffff" />

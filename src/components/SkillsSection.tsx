@@ -8,14 +8,6 @@ import mongodbIcon from "@iconify-icons/simple-icons/mongodb";
 import supabaseIcon from "@iconify-icons/simple-icons/supabase";
 import gitIcon from "@iconify-icons/simple-icons/git";
 import reactIcon from "@iconify-icons/simple-icons/react";
-import nodejsIcon from "@iconify-icons/simple-icons/nodedotjs";
-import solidityIcon from "@iconify-icons/simple-icons/solidity";
-import rustIcon from "@iconify-icons/simple-icons/rust";
-import ipfsIcon from "@iconify-icons/simple-icons/ipfs";
-import blenderIcon from "@iconify-icons/simple-icons/blender";
-import unrealIcon from "@iconify-icons/simple-icons/unrealengine";
-import powerbiIcon from "@iconify-icons/simple-icons/powerbi";
-import tableauIcon from "@iconify-icons/simple-icons/tableau";
 import googleAnalyticsIcon from "@iconify-icons/simple-icons/googleanalytics";
 
 // Skills data with logos and expertise levels
@@ -40,27 +32,33 @@ const SkillsSection = ({ isDarkMode = true }: SkillsSectionProps) => {
 
   // Icon colors for brand consistency
   const iconColors = {
-    python: "#00BFFF", // Neonish blue for Python
-    cplusplus: "#1E90FF", // Neonish blue for C++
+    python: "#00BFFF",
+    cplusplus: "#1E90FF",
     c: "#A8B9CC",
     react: "#61DAFB",
-    nodejs: "#339933",
     mongodb: "#47A248",
     supabase: "#3ECF8E",
-    git: "#FF8C00", // Light neonish orange for Git
-    solidity: "#FFFFFF", // Changed to white for visibility
-    rust: "#DEA584",
-    ipfs: "#65C2CB",
-    powerbi: "#F2C811",
-    tableau: "#E97627",
-    blender: "#F5792A",
-    unrealengine: "#FFFFFF", // Changed to white for visibility
+    git: "#FF8C00",
     googleanalytics: "#F4B400",
     brain: "#FF6F61",
     puzzlePiece: "#A37ACC",
     userTie: "#4ECDC4",
     comments: "#36A2EB",
-    users: "#FFA600"
+    users: "#FFA600",
+    java: "#E84D21",
+    javascript: "#F7DF1E",
+    html: "#E34F26",
+    css: "#264DE4",
+    mysql: "#4479A1",
+    postgresql: "#336791",
+    collaboration: "#34D399",
+    timer: "#F59E0B",
+    adapt: "#8B5CF6",
+    fast: "#14B8A6",
+    ct: "#6366F1",
+    ai: "#A855F7",
+    ml: "#0EA5E9",
+    cv: "#10B981"
   };
 
   // React hover card color for consistent hover effects
@@ -75,26 +73,26 @@ const SkillsSection = ({ isDarkMode = true }: SkillsSectionProps) => {
     { name: "Supabase", level: "Intermediate", logo: <Icon icon={supabaseIcon} width="32" height="32" style={{ color: iconColors.supabase }} />, category: "Backend", color: iconColors.supabase },
     { name: "Git", level: "Expert", logo: <Icon icon={gitIcon} width="32" height="32" style={{ color: iconColors.git }} />, category: "Tools", color: iconColors.git },
     { name: "Prompt Engineering", level: "Intermediate", logo: <Icon icon="fa-solid:brain" width="32" height="32" style={{ color: iconColors.brain }} />, category: "AI", color: iconColors.brain },
-    { name: "Solidity", level: "Beginner", logo: <Icon icon={solidityIcon} width="32" height="32" style={{ color: iconColors.solidity }} />, category: "Blockchain", color: iconColors.solidity },
-    { name: "Rust", level: "Beginner", logo: <Icon icon={rustIcon} width="32" height="32" style={{ color: iconColors.rust }} />, category: "Language", color: iconColors.rust },
-    { name: "Unreal Engine", level: "Intermediate", logo: <Icon icon={unrealIcon} width="32" height="32" style={{ color: iconColors.unrealengine }} />, category: "Game Dev", color: iconColors.unrealengine },
-    { name: "Blender", level: "Intermediate", logo: <Icon icon={blenderIcon} width="32" height="32" style={{ color: iconColors.blender }} />, category: "3D Design", color: iconColors.blender },
-    { name: "Power BI", level: "Intermediate", logo: <Icon icon={powerbiIcon} width="32" height="32" style={{ color: iconColors.powerbi }} />, category: "Analytics", color: iconColors.powerbi },
+    // Additional skills with logos
+    { name: "Java", level: "Intermediate", logo: <Icon icon="simple-icons:java" width="32" height="32" style={{ color: iconColors.java }} />, category: "Language", color: iconColors.java },
+    { name: "JavaScript", level: "Intermediate", logo: <Icon icon="simple-icons:javascript" width="32" height="32" style={{ color: iconColors.javascript }} />, category: "Language", color: iconColors.javascript },
+    { name: "HTML", level: "Intermediate", logo: <Icon icon="simple-icons:html5" width="32" height="32" style={{ color: iconColors.html }} />, category: "Frontend", color: iconColors.html },
+    { name: "CSS", level: "Intermediate", logo: <Icon icon="simple-icons:css3" width="32" height="32" style={{ color: iconColors.css }} />, category: "Frontend", color: iconColors.css },
+    { name: "SQL", level: "Intermediate", logo: <Icon icon="simple-icons:mysql" width="32" height="32" style={{ color: iconColors.mysql }} />, category: "Database", color: iconColors.mysql },
+    { name: "DBMS", level: "Intermediate", logo: <Icon icon="simple-icons:postgresql" width="32" height="32" style={{ color: iconColors.postgresql }} />, category: "Database", color: iconColors.postgresql },
+    { name: "Collaboration", level: "Intermediate", logo: <Icon icon="fa-solid:handshake" width="32" height="32" style={{ color: iconColors.collaboration }} />, category: "Soft Skills", color: iconColors.collaboration },
+    { name: "Time Management", level: "Intermediate", logo: <Icon icon="mdi:timer" width="32" height="32" style={{ color: iconColors.timer }} />, category: "Soft Skills", color: iconColors.timer },
+    { name: "Adaptability", level: "Intermediate", logo: <Icon icon="mdi:adjust" width="32" height="32" style={{ color: iconColors.adapt }} />, category: "Soft Skills", color: iconColors.adapt },
+    { name: "Fast Learner", level: "Intermediate", logo: <Icon icon="mdi:rocket" width="32" height="32" style={{ color: iconColors.fast }} />, category: "Soft Skills", color: iconColors.fast },
+    { name: "Critical Thinking", level: "Intermediate", logo: <Icon icon="mdi:lightbulb" width="32" height="32" style={{ color: iconColors.ct }} />, category: "Soft Skills", color: iconColors.ct },
+    { name: "Artificial Intelligence", level: "Intermediate", logo: <Icon icon="mdi:robot" width="32" height="32" style={{ color: iconColors.ai }} />, category: "AI", color: iconColors.ai },
+    { name: "Machine Learning", level: "Intermediate", logo: <Icon icon="mdi:chart-line" width="32" height="32" style={{ color: iconColors.ml }} />, category: "AI", color: iconColors.ml },
+    { name: "Computer Vision", level: "Intermediate", logo: <Icon icon="mdi:eye" width="32" height="32" style={{ color: iconColors.cv }} />, category: "AI", color: iconColors.cv },
   ];
 
-  // Bottom row skills (Tools, Analytics & Soft Skills)
-  const bottomSkills: Skill[] = [
-    { name: "Tableau", level: "Beginner", logo: <Icon icon={tableauIcon} width="32" height="32" style={{ color: iconColors.tableau }} />, category: "Analytics", color: iconColors.tableau },
-    { name: "SEO", level: "Intermediate", logo: <Icon icon={googleAnalyticsIcon} width="32" height="32" style={{ color: iconColors.googleanalytics }} />, category: "Marketing", color: iconColors.googleanalytics },
-    { name: "Problem Solving", level: "Intermediate", logo: <Icon icon="fa-solid:puzzle-piece" width="32" height="32" style={{ color: iconColors.puzzlePiece }} />, category: "Skills", color: iconColors.puzzlePiece },
-    { name: "Leadership", level: "Expert", logo: <Icon icon="fa-solid:user-tie" width="32" height="32" style={{ color: iconColors.userTie }} />, category: "Management", color: iconColors.userTie },
-    { name: "Communication", level: "Intermediate", logo: <Icon icon="fa-solid:comments" width="32" height="32" style={{ color: iconColors.comments }} />, category: "Soft Skills", color: iconColors.comments },
-    { name: "React", level: "Intermediate", logo: <Icon icon={reactIcon} width="32" height="32" style={{ color: iconColors.react }} />, category: "Frontend", color: iconColors.react },
-    { name: "Node.js", level: "Intermediate", logo: <Icon icon={nodejsIcon} width="32" height="32" style={{ color: iconColors.nodejs }} />, category: "Backend", color: iconColors.nodejs },
-    { name: "IPFS", level: "Intermediate", logo: <Icon icon={ipfsIcon} width="32" height="32" style={{ color: iconColors.ipfs }} />, category: "Web3", color: iconColors.ipfs },
-    { name: "Community Management", level: "Intermediate", logo: <Icon icon="fa-solid:users" width="32" height="32" style={{ color: iconColors.users }} />, category: "Management", color: iconColors.users },
-    { name: "n8n", level: "Intermediate", logo: <Icon icon="simple-icons:n8n" width="32" height="32" style={{ color: "#FF6B6B" }} />, category: "Automation", color: "#FF6B6B" },
-  ];
+  // Bottom row skills: rotate to ensure different content from top row
+  // This keeps both rows equal length but avoids exact duplication for visual variety
+  const bottomSkills: Skill[] = topSkills.slice(7).concat(topSkills.slice(0, 7));
 
   // Set container width for tooltip positioning
   useEffect(() => {

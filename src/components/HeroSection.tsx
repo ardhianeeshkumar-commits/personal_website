@@ -15,6 +15,7 @@ interface HeroSectionProps {
     twitter?: string;
     email?: string;
   };
+  isDarkMode?: boolean;
 }
 
 const HeroSection = ({
@@ -27,6 +28,7 @@ const HeroSection = ({
     linkedin: "https://www.linkedin.com/in/ardhi-aneesh-kumar-60ba46318/",
     email: "mailto:ardhianeeshkumar@gmail.com",
   },
+  isDarkMode = true,
 }: HeroSectionProps) => {
   const [typedText, setTypedText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -83,7 +85,7 @@ const HeroSection = ({
   return (
     <motion.section
       ref={containerRef}
-      className="relative min-h-screen flex flex-col justify-center items-center px-4 py-20 bg-black overflow-hidden cursor-none"
+      className={`relative min-h-screen flex flex-col justify-center items-center px-4 py-20 ${isDarkMode ? "bg-black" : "bg-white"} overflow-hidden cursor-none`}
     >
       <Vortex
         backgroundColor="black"
@@ -145,7 +147,7 @@ const HeroSection = ({
               asChild
               className="bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white px-8 py-6 text-lg shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 transition-all duration-300"
             >
-              <a href="/ARDHI_ANEESH_KUMAR_RESUME.pdf" download>
+              <a href="/ARDHIANEESHKUMARRESUME.pdf" download>
                 <Download className="mr-2 h-5 w-5" /> Resume
               </a>
             </Button>
