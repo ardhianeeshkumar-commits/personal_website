@@ -25,7 +25,7 @@ const HeroSection = ({
   cvLink = "#",
   socialLinks = {
     github: "https://github.com/ardhianeeshkumar-commits",
-    linkedin: "https://www.linkedin.com/in/ardhi-aneesh-kumar-60ba46318/",
+    linkedin: "https://www.linkedin.com/in/ardhi-aneesh-kumar-0aa058302",
     email: "mailto:ardhianeeshkumar@gmail.com",
   },
   isDarkMode = true,

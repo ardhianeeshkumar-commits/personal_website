@@ -380,7 +380,7 @@ const Home = () => {
                             tooltip: 'Discord',
                           },
                           {
-                            link: 'https://www.linkedin.com/in/ardhi-aneesh-kumar-60ba46318/',
+                            link: 'https://www.linkedin.com/in/ardhi-aneesh-kumar-0aa058302',
                             target: '_blank',
                             Icon: <FaLinkedin size={28} />,
                             defaultBgColor: 'bg-zinc-700',

@@ -92,7 +92,7 @@ const ContactSection = ({ isDarkMode = true }: ContactSectionProps) => {
     {
       icon: <Linkedin className="w-6 h-6" />,
       label: "LinkedIn",
-      href: "https://www.linkedin.com/in/ardhi-aneesh-kumar-60ba46318/",
+      href: "https://www.linkedin.com/in/ardhi-aneesh-kumar-0aa058302",
       color: "hover:text-blue-400",
     },
     {

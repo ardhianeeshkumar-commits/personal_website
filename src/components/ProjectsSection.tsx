@@ -178,6 +178,27 @@ const ProjectsSection = ({ isDarkMode = true }: ProjectsSectionProps) => {
         }
       ],
     },
+    {
+      id: 6,
+      title: "FACETRACK - AI ATTENDANCE SYSTEM",
+      description:
+        "A browser-based attendance system that recognizes registered faces through the camera and records daily attendance locally.",
+      details:
+        "FaceTrack is a privacy-focused attendance application built with React and face-api.js. It lets administrators register people from face photos, use live camera recognition to mark attendance once per day, review historical records, and export attendance data as CSV. Face recognition models, registered face encodings, and attendance records are handled in the browser, so camera video is not stored or sent to a server.",
+      image:
+        "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&q=80",
+      technologies: ["React", "TypeScript", "face-api.js", "Vite", "Tailwind CSS", "LocalStorage"],
+      githubUrl: "https://github.com/ardhianeeshkumar-commits/facetrack-attendance-system.git",
+      featured: true,
+      status: "completed",
+      contributors: [
+        {
+          name: "Ardhi Aneesh Kumar",
+          avatar: "https://github.com/ardhianeeshkumar-commits.png",
+          profileUrl: "https://github.com/ardhianeeshkumar-commits"
+        }
+      ],
+    },
   ];
 
   const handleProjectClick = (projectId: number) => {
