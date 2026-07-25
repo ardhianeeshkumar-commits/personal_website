@@ -33,37 +33,6 @@ const ProjectsSection = ({ isDarkMode = true }: ProjectsSectionProps) => {
   // Portfolio projects data
   const projects: Project[] = [
     {
-      id: 1,
-      title: "SAGE AI TUTOR",
-      description:
-        "An intelligent AI-powered tutoring system with Intel OpenVINO optimization for enhanced performance and personalized learning experiences.",
-      details:
-        "SAGE AI TUTOR is a comprehensive educational platform that leverages artificial intelligence and Intel OpenVINO optimization for enhanced performance. The system features text generation, speech-to-text transcription, text-to-speech synthesis, image analysis, document processing, and attendance detection. Built with modern AI/ML technologies including PyTorch, Transformers, and Intel OpenVINO, it provides students with customized learning experiences, real-time feedback, and engaging educational content. The platform achieves 53.25% reduction in model size and 72.52% improvement in inference latency through CPU-optimized inference.",
-      image:
-        "/sage-cover.jpg",
-      technologies: ["React", "Python", "FastAPI", "PyTorch", "Intel OpenVINO", "Transformers", "OpenCV"],
-      githubUrl: "https://github.com/sathwik-y/AI-Tutor-Intel.git",
-      featured: true,
-      status: "completed",
-      contributors: [
-        {
-          name: "Ardhi Aneesh Kumar",
-          avatar: "https://github.com/ardhianeeshkumar-commits.png",
-          profileUrl: "https://github.com/ardhianeeshkumar-commits"
-        },
-        {
-          name: "Sathwik Y",
-          avatar: "https://github.com/sathwik-y.png",
-          profileUrl: "https://github.com/sathwik-y"
-        },
-        {
-          name: "Bhargav Padala",
-          avatar: "/b-logo.svg?v=1",
-          profileUrl: "https://www.linkedin.com/in/bhargav-padala-b636ab24a/"
-        }
-      ],
-    },
-    {
       id: 2,
       title: "WEB3 VAULT - IPFS FILE AND PASSWORD STORAGE",
       description:
@@ -81,53 +50,6 @@ const ProjectsSection = ({ isDarkMode = true }: ProjectsSectionProps) => {
           name: "Ardhi Aneesh Kumar",
           avatar: "https://github.com/ardhianeeshkumar-commits.png",
           profileUrl: "https://github.com/ardhianeeshkumar-commits"
-        }
-      ],
-    },
-    {
-      id: 3,
-      title: "NIVASA - APARTMENT ADMINISTRATION SYSTEM",
-      description:
-        "A modern, full-stack web application for managing apartment communities with role-based dashboards and real-time features.",
-      details:
-        "Nivasa is a comprehensive apartment administration system designed to streamline property management operations. The platform includes tenant registration and management, maintenance ticket tracking, rent collection, utility bill management, and financial reporting. The system provides role-based dashboards for Admins, Tenants, and Technicians with real-time notifications, secure JWT authentication, and responsive UI for both desktop and mobile. Built with React, Node.js, Express, and MongoDB, it offers a user-friendly interface ensuring efficient communication and transparent property management processes.",
-      image:
-        "/nivasa-cover.jpg",
-      technologies: ["React", "Node.js", "Express", "MongoDB", "JWT", "Tailwind CSS", "shadcn/ui"],
-      githubUrl: "https://github.com/sai117/Nivasa.git",
-      liveUrl: "https://nivasa-production-7aa9.up.railway.app",
-      featured: true,
-      status: "completed",
-      contributors: [
-        {
-          name: "Ardhi Aneesh Kumar",
-          avatar: "https://github.com/ardhianeeshkumar-commits.png",
-          profileUrl: "https://github.com/ardhianeeshkumar-commits"
-        },
-        {
-          name: "sai117",
-          avatar: "https://github.com/sai117.png",
-          profileUrl: "https://github.com/sai117"
-        },
-        {
-          name: "RushikX",
-          avatar: "https://github.com/RushikX.png",
-          profileUrl: "https://github.com/RushikX"
-        },
-        {
-          name: "Bharyy",
-          avatar: "https://github.com/Bharyy.png",
-          profileUrl: "https://github.com/Bharyy"
-        },
-        {
-          name: "Nitin-Penupala",
-          avatar: "https://github.com/Nitin-Penupala.png",
-          profileUrl: "https://github.com/Nitin-Penupala"
-        },
-        {
-          name: "dineshviriyala",
-          avatar: "https://github.com/dineshviriyala.png",
-          profileUrl: "https://github.com/dineshviriyala"
         }
       ],
     },
